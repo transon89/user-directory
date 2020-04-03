@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
+import Search from "./Search.js"
+import "./Navbar.css"
 
-// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
-function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="navbar-brand">
-        Employee Directory
-      </div>
-      <div>
-        
-      </div>
-    </nav>
-  );
+function Navbar(){
+    // used as the navbar for the site.
+    return(
+        <div className="navbar">
+            <div className="logo bold">Employee Directory</div>
+            <div className="descriptor">
+                <div className="bold">Employee Search: </div>
+                <Search />
+            </div>
+        </div>
+    )
 }
-
 export default Navbar;
